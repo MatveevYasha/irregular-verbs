@@ -1,0 +1,155 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+
+import 'package:irregular_verbs_app/data/entities/verb.dart';
+import 'package:flutter/services.dart';
+
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
+
+  @override
+  State<MainPage> createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  int wordNumber = 0;
+
+  final verb = Verb(
+    base: 'be',
+    pastSimple: 'was/were',
+    pastParticiple: 'been',
+    translation: 'быть',
+  );
+
+  Future<void> _fetchFileFromAssets() async {
+    // final str = rootBundle
+    //     .loadString('/lib/data/json/verbs.json')
+    //     .then((file) => file.toString())
+    //     .catchError((err) => Future<String>.error(err));
+    // final str = await rootBundle.loadString('/json/verbs.json');
+
+    String data = await DefaultAssetBundle.of(context).loadString('assets/json/verbs.json');
+    final jsonResult = jsonDecode(data);
+
+    final list = jsonResult['verbs'];
+
+    print(list);
+  }
+
+  void _scrollWords() {
+    if (wordNumber < 4) {
+      wordNumber++;
+      setState(() {});
+      return;
+    } else {
+      wordNumber = 0;
+      setState(() {});
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Irregular Verbs $wordNumber'),
+      ),
+      body: (wordNumber == 0)
+          ? const Center(
+              child: Text(
+                'Click on the button to start!',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            )
+          : SizedBox(
+              width: double.infinity,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  _Text(
+                    number: 1,
+                    title: verb.base,
+                    wordNumber: wordNumber,
+                  ),
+                  const _Divider(),
+                  _Text(
+                    number: 2,
+                    title: verb.pastSimple,
+                    wordNumber: wordNumber,
+                  ),
+                  const _Divider(),
+                  _Text(
+                    number: 3,
+                    title: verb.pastParticiple,
+                    wordNumber: wordNumber,
+                  ),
+                  const _Divider(),
+                  _Text(
+                    number: 4,
+                    title: verb.translation,
+                    wordNumber: wordNumber,
+                  ),
+                ],
+              ),
+            ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _fetchFileFromAssets,
+        child: const Icon(Icons.workspaces_filled),
+      ),
+    );
+  }
+}
+
+class _Divider extends StatelessWidget {
+  const _Divider();
+
+  @override
+  Widget build(BuildContext context) => const Divider(color: Colors.black);
+}
+
+class _Text extends StatelessWidget {
+  final String title;
+  final int wordNumber;
+  final int number;
+
+  const _Text({
+    required this.title,
+    required this.wordNumber,
+    required this.number,
+  });
+
+  @override
+  Widget build(BuildContext context) => Expanded(
+        child: Row(
+          children: [
+            if (number != 4)
+              Expanded(
+                child: Text(
+                  number.toString(),
+                  style: TextStyle(
+                    fontSize: 72,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey[300],
+                  ),
+                  textAlign: TextAlign.end,
+                ),
+              ),
+            Expanded(
+              flex: 5,
+              child: Text(
+                (number <= wordNumber) ? title : '...',
+                style: const TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w500,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
+      );
+}
