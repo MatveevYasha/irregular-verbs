@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import 'package:irregular_verbs_app/data/entities/verb.dart';
-import 'package:flutter/services.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
