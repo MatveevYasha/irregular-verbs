@@ -1,704 +1,1048 @@
-{
-    "verbs": [
-      {
-        "Base": "abide",
-        "Past-simple": "abode",
-        "Past-Participle": "abode"
-      },
-      {
-        "Base": "arise",
-        "Past-simple": "arose",
-        "Past-Participle": "arisen"
-      },
-      {
-        "Base": "awake",
-        "Past-simple": "awoke",
-        "Past-Participle": "awoken"
-      },
-      {
-        "Base": "be",
-        "Past-simple": "was/were",
-        "Past-Participle": "been"
-      },
-      {
-        "Base": "bear",
-        "Past-simple": "bore",
-        "Past-Participle": "born(e)"
-      },
-      {
-        "Base": "beat",
-        "Past-simple": "beat",
-        "Past-Participle": "beaten"
-      },
-      {
-        "Base": "become",
-        "Past-simple": "became",
-        "Past-Participle": "become"
-      },
-      {
-        "Base": "begin",
-        "Past-simple": "began",
-        "Past-Participle": "begun"
-      },
-      {
-        "Base": "bend",
-        "Past-simple": "bent",
-        "Past-Participle": "bent"
-      },
-      {
-        "Base": "bet",
-        "Past-simple": "bet",
-        "Past-Participle": "bet"
-      },
-      {
-        "Base": "bind",
-        "Past-simple": "bound",
-        "Past-Participle": "bound"
-      },
-      {
-        "Base": "bite",
-        "Past-simple": "bit",
-        "Past-Participle": "bitten"
-      },
-      {
-        "Base": "bleed",
-        "Past-simple": "bled",
-        "Past-Participle": "bled"
-      },
-      {
-        "Base": "blow",
-        "Past-simple": "blew",
-        "Past-Participle": "blown"
-      },
-      {
-        "Base": "break",
-        "Past-simple": "broke",
-        "Past-Participle": "broken"
-      },
-      {
-        "Base": "breed",
-        "Past-simple": "bred",
-        "Past-Participle": "bred"
-      },
-      {
-        "Base": "bring",
-        "Past-simple": "brought",
-        "Past-Participle": "brought"
-      },
-      {
-        "Base": "broadcast",
-        "Past-simple": "broadcast",
-        "Past-Participle": "broadcast"
-      },
-      {
-        "Base": "build",
-        "Past-simple": "built",
-        "Past-Participle": "built"
-      },
-      {
-        "Base": "burn",
-        "Past-simple": "burnt/burned",
-        "Past-Participle": "burnt/burned"
-      },
-      {
-        "Base": "burst",
-        "Past-simple": "burst",
-        "Past-Participle": "burst"
-      },
-      {
-        "Base": "buy",
-        "Past-simple": "bought",
-        "Past-Participle": "bought"
-      },
-      {
-        "Base": "can",
-        "Past-simple": "could",
-        "Past-Participle": "been able"
-      },
-      {
-        "Base": "catch",
-        "Past-simple": "caught",
-        "Past-Participle": "caught"
-      },
-      {
-        "Base": "choose",
-        "Past-simple": "chose",
-        "Past-Participle": "chosen"
-      },
-      {
-        "Base": "cling",
-        "Past-simple": "clung",
-        "Past-Participle": "clung"
-      },
-      {
-        "Base": "come",
-        "Past-simple": "came",
-        "Past-Participle": "come"
-      },
-      {
-        "Base": "cost",
-        "Past-simple": "cost",
-        "Past-Participle": "cost"
-      },
-      {
-        "Base": "creep",
-        "Past-simple": "crept",
-        "Past-Participle": "crept"
-      },
-      {
-        "Base": "cut",
-        "Past-simple": "cut",
-        "Past-Participle": "cut"
-      },
-      {
-        "Base": "deal",
-        "Past-simple": "dealt",
-        "Past-Participle": "dealt"
-      },
-      {
-        "Base": "dig",
-        "Past-simple": "dug",
-        "Past-Participle": "dug"
-      },
-      {
-        "Base": "do",
-        "Past-simple": "did",
-        "Past-Participle": "done"
-      },
-      {
-        "Base": "draw",
-        "Past-simple": "drew",
-        "Past-Participle": "drawn"
-      },
-      {
-        "Base": "dream",
-        "Past-simple": "dreamt/dreamed",
-        "Past-Participle": "dreamt/dreamed"
-      },
-      {
-        "Base": "drink",
-        "Past-simple": "drank",
-        "Past-Participle": "drunk"
-      },
-      {
-        "Base": "drive",
-        "Past-simple": "drove",
-        "Past-Participle": "driven"
-      },
-      {
-        "Base": "eat",
-        "Past-simple": "ate",
-        "Past-Participle": "eaten"
-      },
-      {
-        "Base": "fall",
-        "Past-simple": "fell",
-        "Past-Participle": "fallen"
-      },
-      {
-        "Base": "feed",
-        "Past-simple": "fed",
-        "Past-Participle": "fed"
-      },
-      {
-        "Base": "feel",
-        "Past-simple": "felt",
-        "Past-Participle": "felt"
-      },
-      {
-        "Base": "fight",
-        "Past-simple": "fought",
-        "Past-Participle": "fought"
-      },
-      {
-        "Base": "find",
-        "Past-simple": "found",
-        "Past-Participle": "found"
-      },
-      {
-        "Base": "fly",
-        "Past-simple": "flew",
-        "Past-Participle": "flown"
-      },
-      {
-        "Base": "forbid",
-        "Past-simple": "forbade",
-        "Past-Participle": "forbidden"
-      },
-      {
-        "Base": "forget",
-        "Past-simple": "forgot",
-        "Past-Participle": "forgotten"
-      },
-      {
-        "Base": "forgive",
-        "Past-simple": "forgave",
-        "Past-Participle": "forgiven"
-      },
-      {
-        "Base": "freeze",
-        "Past-simple": "froze",
-        "Past-Participle": "frozen"
-      },
-      {
-        "Base": "get",
-        "Past-simple": "got",
-        "Past-Participle": "got"
-      },
-      {
-        "Base": "give",
-        "Past-simple": "gave",
-        "Past-Participle": "given"
-      },
-      {
-        "Base": "go",
-        "Past-simple": "went",
-        "Past-Participle": "gone"
-      },
-      {
-        "Base": "grind",
-        "Past-simple": "ground",
-        "Past-Participle": "ground"
-      },
-      {
-        "Base": "grow",
-        "Past-simple": "grew",
-        "Past-Participle": "grown"
-      },
-      {
-        "Base": "hang",
-        "Past-simple": "hung",
-        "Past-Participle": "hung"
-      },
-      {
-        "Base": "have",
-        "Past-simple": "had",
-        "Past-Participle": "had"
-      },
-      {
-        "Base": "hear",
-        "Past-simple": "heard",
-        "Past-Participle": "heard"
-      },
-      {
-        "Base": "hide",
-        "Past-simple": "hid",
-        "Past-Participle": "hidden"
-      },
-      {
-        "Base": "hit",
-        "Past-simple": "hit",
-        "Past-Participle": "hit"
-      },
-      {
-        "Base": "hold",
-        "Past-simple": "held",
-        "Past-Participle": "held"
-      },
-      {
-        "Base": "hurt",
-        "Past-simple": "hurt",
-        "Past-Participle": "hurt"
-      },
-      {
-        "Base": "keep",
-        "Past-simple": "kept",
-        "Past-Participle": "kept"
-      },
-      {
-        "Base": "kneel",
-        "Past-simple": "knelt",
-        "Past-Participle": "knelt"
-      },
-      {
-        "Base": "know",
-        "Past-simple": "knew",
-        "Past-Participle": "known"
-      },
-      {
-        "Base": "lay",
-        "Past-simple": "laid",
-        "Past-Participle": "laid"
-      },
-      {
-        "Base": "lead",
-        "Past-simple": "led",
-        "Past-Participle": "led"
-      },
-      {
-        "Base": "lean",
-        "Past-simple": "leant/leaned",
-        "Past-Participle": "leant/leaned"
-      },
-      {
-        "Base": "learn",
-        "Past-simple": "learnt/learned",
-        "Past-Participle": "learnt/learned"
-      },
-      {
-        "Base": "leave",
-        "Past-simple": "left",
-        "Past-Participle": "left"
-      },
-      {
-        "Base": "lent",
-        "Past-simple": "lent",
-        "Past-Participle": "lent"
-      },
-      {
-        "Base": "lie (in bed)",
-        "Past-simple": "lay",
-        "Past-Participle": "lain"
-      },
-      {
-        "Base": "lie (to not tell the truth)",
-        "Past-simple": "lied",
-        "Past-Participle": "lied"
-      },
-      {
-        "Base": "light",
-        "Past-simple": "lit/lighted",
-        "Past-Participle": "lit/lighted"
-      },
-      {
-        "Base": "lose",
-        "Past-simple": "lost",
-        "Past-Participle": "lost"
-      },
-      {
-        "Base": "make",
-        "Past-simple": "made",
-        "Past-Participle": "made"
-      },
-      {
-        "Base": "may",
-        "Past-simple": "might",
-        "Past-Participle": "…"
-      },
-      {
-        "Base": "mean",
-        "Past-simple": "meant",
-        "Past-Participle": "meant"
-      },
-      {
-        "Base": "meet",
-        "Past-simple": "met",
-        "Past-Participle": "met"
-      },
-      {
-        "Base": "mow",
-        "Past-simple": "mowed",
-        "Past-Participle": "mown/mowed"
-      },
-      {
-        "Base": "must",
-        "Past-simple": "had to",
-        "Past-Participle": "…"
-      },
-      {
-        "Base": "overtake",
-        "Past-simple": "overtook",
-        "Past-Participle": "overtaken"
-      },
-      {
-        "Base": "pay",
-        "Past-simple": "paid",
-        "Past-Participle": "paid"
-      },
-      {
-        "Base": "put",
-        "Past-simple": "put",
-        "Past-Participle": "put"
-      },
-      {
-        "Base": "read",
-        "Past-simple": "read",
-        "Past-Participle": "read"
-      },
-      {
-        "Base": "ride",
-        "Past-simple": "rode",
-        "Past-Participle": "ridden"
-      },
-      {
-        "Base": "ring",
-        "Past-simple": "rang",
-        "Past-Participle": "rung"
-      },
-      {
-        "Base": "rise",
-        "Past-simple": "rose",
-        "Past-Participle": "risen"
-      },
-      {
-        "Base": "run",
-        "Past-simple": "ran",
-        "Past-Participle": "run"
-      },
-      {
-        "Base": "saw",
-        "Past-simple": "sawed",
-        "Past-Participle": "sawn/sawed"
-      },
-      {
-        "Base": "say",
-        "Past-simple": "said",
-        "Past-Participle": "said"
-      },
-      {
-        "Base": "see",
-        "Past-simple": "saw",
-        "Past-Participle": "seen"
-      },
-      {
-        "Base": "sell",
-        "Past-simple": "sold",
-        "Past-Participle": "sold"
-      },
-      {
-        "Base": "send",
-        "Past-simple": "sent",
-        "Past-Participle": "sent"
-      },
-      {
-        "Base": "set",
-        "Past-simple": "set",
-        "Past-Participle": "set"
-      },
-      {
-        "Base": "sew",
-        "Past-simple": "sewed",
-        "Past-Participle": "sewn/sewed"
-      },
-      {
-        "Base": "shake",
-        "Past-simple": "shook",
-        "Past-Participle": "shaken"
-      },
-      {
-        "Base": "shall",
-        "Past-simple": "should",
-        "Past-Participle": "…"
-      },
-      {
-        "Base": "shed",
-        "Past-simple": "shed",
-        "Past-Participle": "shed"
-      },
-      {
-        "Base": "shine",
-        "Past-simple": "shone",
-        "Past-Participle": "shone"
-      },
-      {
-        "Base": "shoot",
-        "Past-simple": "shot",
-        "Past-Participle": "shot"
-      },
-      {
-        "Base": "show",
-        "Past-simple": "showed",
-        "Past-Participle": "shown"
-      },
-      {
-        "Base": "shrink",
-        "Past-simple": "shrank",
-        "Past-Participle": "shrunk"
-      },
-      {
-        "Base": "shut",
-        "Past-simple": "shut",
-        "Past-Participle": "shut"
-      },
-      {
-        "Base": "sing",
-        "Past-simple": "sang",
-        "Past-Participle": "sung"
-      },
-      {
-        "Base": "sink",
-        "Past-simple": "sank",
-        "Past-Participle": "sunk"
-      },
-      {
-        "Base": "sit",
-        "Past-simple": "sat",
-        "Past-Participle": "sat"
-      },
-      {
-        "Base": "sleep",
-        "Past-simple": "slept",
-        "Past-Participle": "slept"
-      },
-      {
-        "Base": "slide",
-        "Past-simple": "slid",
-        "Past-Participle": "slid"
-      },
-      {
-        "Base": "smell",
-        "Past-simple": "smelt",
-        "Past-Participle": "smelt"
-      },
-      {
-        "Base": "sow",
-        "Past-simple": "sowed",
-        "Past-Participle": "sown/sowed"
-      },
-      {
-        "Base": "speak",
-        "Past-simple": "spoke",
-        "Past-Participle": "spoken"
-      },
-      {
-        "Base": "spell",
-        "Past-simple": "spelt/spelled",
-        "Past-Participle": "spelt/spelled"
-      },
-      {
-        "Base": "spend",
-        "Past-simple": "spent",
-        "Past-Participle": "spent"
-      },
-      {
-        "Base": "spill",
-        "Past-simple": "spilt/spilled",
-        "Past-Participle": "spilt/spilled"
-      },
-      {
-        "Base": "spit",
-        "Past-simple": "spat",
-        "Past-Participle": "spat"
-      },
-      {
-        "Base": "spread",
-        "Past-simple": "spread",
-        "Past-Participle": "spread"
-      },
-      {
-        "Base": "stand",
-        "Past-simple": "stood",
-        "Past-Participle": "stood"
-      },
-      {
-        "Base": "steal",
-        "Past-simple": "stole",
-        "Past-Participle": "stolen"
-      },
-      {
-        "Base": "stick",
-        "Past-simple": "stuck",
-        "Past-Participle": "stuck"
-      },
-      {
-        "Base": "sting",
-        "Past-simple": "stung",
-        "Past-Participle": "stung"
-      },
-      {
-        "Base": "stink",
-        "Past-simple": "stank",
-        "Past-Participle": "stunk"
-      },
-      {
-        "Base": "strike",
-        "Past-simple": "struck",
-        "Past-Participle": "struck"
-      },
-      {
-        "Base": "swear",
-        "Past-simple": "swore",
-        "Past-Participle": "sworn"
-      },
-      {
-        "Base": "sweep",
-        "Past-simple": "swept",
-        "Past-Participle": "swept"
-      },
-      {
-        "Base": "swell",
-        "Past-simple": "swelled",
-        "Past-Participle": "swollen/swelled"
-      },
-      {
-        "Base": "swim",
-        "Past-simple": "swam",
-        "Past-Participle": "swum"
-      },
-      {
-        "Base": "swing",
-        "Past-simple": "swung",
-        "Past-Participle": "swung"
-      },
-      {
-        "Base": "take",
-        "Past-simple": "took",
-        "Past-Participle": "taken"
-      },
-      {
-        "Base": "teach",
-        "Past-simple": "taught",
-        "Past-Participle": "taught"
-      },
-      {
-        "Base": "tear",
-        "Past-simple": "tore",
-        "Past-Participle": "torn"
-      },
-      {
-        "Base": "tell",
-        "Past-simple": "told",
-        "Past-Participle": "told"
-      },
-      {
-        "Base": "think",
-        "Past-simple": "thought",
-        "Past-Participle": "thought"
-      },
-      {
-        "Base": "throw",
-        "Past-simple": "threw",
-        "Past-Participle": "thrown"
-      },
-      {
-        "Base": "understand",
-        "Past-simple": "understood",
-        "Past-Participle": "understood"
-      },
-      {
-        "Base": "wake",
-        "Past-simple": "woke",
-        "Past-Participle": "woken"
-      },
-      {
-        "Base": "wear",
-        "Past-simple": "wore",
-        "Past-Participle": "worn"
-      },
-      {
-        "Base": "weep",
-        "Past-simple": "wept",
-        "Past-Participle": "wept"
-      },
-      {
-        "Base": "will",
-        "Past-simple": "would",
-        "Past-Participle": "…"
-      },
-      {
-        "Base": "win",
-        "Past-simple": "won",
-        "Past-Participle": "won"
-      },
-      {
-        "Base": "wind",
-        "Past-simple": "wound",
-        "Past-Participle": "wound"
-      },
-      {
-        "Base": "write",
-        "Past-simple": "wrote",
-        "Past-Participle": "written"
-      }
-    ]
+
+   [
+  {
+    "baseForm": "abide",
+    "pastSimple": "abode",
+    "pastParticiple": "abode",
+    "translation": "выносить, терпеть"
+  },
+  {
+    "baseForm": "arise",
+    "pastSimple": "arose",
+    "pastParticiple": "arisen",
+    "translation": "возникать, появляться"
+  },
+  {
+    "baseForm": "awake",
+    "pastSimple": "awoke",
+    "pastParticiple": "awoken",
+    "translation": "разбудить"
+  },
+  {
+    "baseForm": "be",
+    "pastSimple": "was/were",
+    "pastParticiple": "been",
+    "translation": "быть"
+  },
+  {
+    "baseForm": "bear",
+    "pastSimple": "bore",
+    "pastParticiple": "born",
+    "translation": "терпеть"
+  },
+  {
+    "baseForm": "beat",
+    "pastSimple": "beat",
+    "pastParticiple": "beaten",
+    "translation": "бить, ударять"
+  },
+  {
+    "baseForm": "become",
+    "pastSimple": "became",
+    "pastParticiple": "become",
+    "translation": "становиться"
+  },
+  {
+    "baseForm": "befall",
+    "pastSimple": "befell",
+    "pastParticiple": "befallen",
+    "translation": "случаться, приключаться"
+  },
+  {
+    "baseForm": "beget",
+    "pastSimple": "begot",
+    "pastParticiple": "begotten",
+    "translation": "рождать, производить"
+  },
+  {
+    "baseForm": "begin",
+    "pastSimple": "began",
+    "pastParticiple": "begun",
+    "translation": "начинать"
+  },
+  {
+    "baseForm": "behold",
+    "pastSimple": "beheld",
+    "pastParticiple": "beheld",
+    "translation": "заметить, увидеть"
+  },
+  {
+    "baseForm": "bend",
+    "pastSimple": "bent",
+    "pastParticiple": "bent",
+    "translation": "сгибать"
+  },
+  {
+    "baseForm": "bereave",
+    "pastSimple": "bereft",
+    "pastParticiple": "bereft",
+    "translation": "лишать, отнимать"
+  },
+  {
+    "baseForm": "beseech",
+    "pastSimple": "besought",
+    "pastParticiple": "besought",
+    "translation": "умолять"
+  },
+  {
+    "baseForm": "beset",
+    "pastSimple": "beset",
+    "pastParticiple": "beset",
+    "translation": "осаждать, занимать"
+  },
+  {
+    "baseForm": "bespeak",
+    "pastSimple": "bespoke",
+    "pastParticiple": "bespoken",
+    "translation": "заказывать заранее, предзнаменовать"
+  },
+  {
+    "baseForm": "bestride",
+    "pastSimple": "bestrode",
+    "pastParticiple": "bestridden",
+    "translation": "садиться верхом"
+  },
+  {
+    "baseForm": "bet",
+    "pastSimple": "bet",
+    "pastParticiple": "bet",
+    "translation": "биться об заклад, делать ставку"
+  },
+  {
+    "baseForm": "bid",
+    "pastSimple": "bade / bid",
+    "pastParticiple": "bidden / bid",
+    "translation": "предлагать цену на аукционе"
+  },
+  {
+    "baseForm": "bind",
+    "pastSimple": "bound",
+    "pastParticiple": "bound",
+    "translation": "связывать"
+  },
+  {
+    "baseForm": "bite",
+    "pastSimple": "bit",
+    "pastParticiple": "bitten",
+    "translation": "кусать"
+  },
+  {
+    "baseForm": "bleed",
+    "pastSimple": "bled",
+    "pastParticiple": "bled",
+    "translation": "кровоточить"
+  },
+  {
+    "baseForm": "blow",
+    "pastSimple": "blew",
+    "pastParticiple": "blown",
+    "translation": "дуть"
+  },
+  {
+    "baseForm": "break",
+    "pastSimple": "broke",
+    "pastParticiple": "broken",
+    "translation": "сломать"
+  },
+  {
+    "baseForm": "breed",
+    "pastSimple": "bred",
+    "pastParticiple": "bred",
+    "translation": "размножаться, выращивать"
+  },
+  {
+    "baseForm": "bring",
+    "pastSimple": "brought",
+    "pastParticiple": "brought",
+    "translation": "приносить"
+  },
+  {
+    "baseForm": "broadcast",
+    "pastSimple": "broadcast",
+    "pastParticiple": "broadcast",
+    "translation": "передавать в эфир"
+  },
+  {
+    "baseForm": "build",
+    "pastSimple": "built",
+    "pastParticiple": "built",
+    "translation": "строить"
+  },
+  {
+    "baseForm": "burn",
+    "pastSimple": "burnt",
+    "pastParticiple": "burnt",
+    "translation": "гореть"
+  },
+  {
+    "baseForm": "burst",
+    "pastSimple": "burst",
+    "pastParticiple": "burst",
+    "translation": "взрываться, лопаться"
+  },
+  {
+    "baseForm": "buy",
+    "pastSimple": "bought",
+    "pastParticiple": "bought",
+    "translation": "покупать"
+  },
+  {
+    "baseForm": "can",
+    "pastSimple": "could",
+    "pastParticiple": "could",
+    "translation": "мочь"
+  },
+  {
+    "baseForm": "cast",
+    "pastSimple": "cast",
+    "pastParticiple": "cast",
+    "translation": "бросать, кидать"
+  },
+  {
+    "baseForm": "catch",
+    "pastSimple": "caught",
+    "pastParticiple": "caught",
+    "translation": "поймать"
+  },
+  {
+    "baseForm": "choose",
+    "pastSimple": "chose",
+    "pastParticiple": "chosen",
+    "translation": "выбирать"
+  },
+  {
+    "baseForm": "cling",
+    "pastSimple": "clung",
+    "pastParticiple": "clung",
+    "translation": "цепляться"
+  },
+  {
+    "baseForm": "come",
+    "pastSimple": "came",
+    "pastParticiple": "come",
+    "translation": "приходить"
+  },
+  {
+    "baseForm": "cost",
+    "pastSimple": "cost",
+    "pastParticiple": "cost",
+    "translation": "стоить"
+  },
+  {
+    "baseForm": "creep",
+    "pastSimple": "crept",
+    "pastParticiple": "crept",
+    "translation": "ползти"
+  },
+  {
+    "baseForm": "cut",
+    "pastSimple": "cut",
+    "pastParticiple": "cut",
+    "translation": "порезать"
+  },
+  {
+    "baseForm": "deal",
+    "pastSimple": "dealt",
+    "pastParticiple": "dealt",
+    "translation": "иметь дело с, касаться"
+  },
+  {
+    "baseForm": "dig",
+    "pastSimple": "dug",
+    "pastParticiple": "dug",
+    "translation": "копать"
+  },
+  {
+    "baseForm": "do",
+    "pastSimple": "did",
+    "pastParticiple": "done",
+    "translation": "делать"
+  },
+  {
+    "baseForm": "draw",
+    "pastSimple": "drew",
+    "pastParticiple": "drawn",
+    "translation": "рисовать"
+  },
+  {
+    "baseForm": "dream",
+    "pastSimple": "dreamt",
+    "pastParticiple": "dreamt",
+    "translation": "мечтать"
+  },
+  {
+    "baseForm": "drink",
+    "pastSimple": "drank",
+    "pastParticiple": "drunk",
+    "translation": "пить"
+  },
+  {
+    "baseForm": "drive",
+    "pastSimple": "drove",
+    "pastParticiple": "driven",
+    "translation": "водить машину"
+  },
+  {
+    "baseForm": "dwell",
+    "pastSimple": "dwelt",
+    "pastParticiple": "dwelt",
+    "translation": "жить, обитать"
+  },
+  {
+    "baseForm": "eat",
+    "pastSimple": "ate",
+    "pastParticiple": "eaten",
+    "translation": "есть"
+  },
+  {
+    "baseForm": "fall",
+    "pastSimple": "fell",
+    "pastParticiple": "fallen",
+    "translation": "падать"
+  },
+  {
+    "baseForm": "feed",
+    "pastSimple": "fed",
+    "pastParticiple": "fed",
+    "translation": "кормить"
+  },
+  {
+    "baseForm": "feel",
+    "pastSimple": "felt",
+    "pastParticiple": "felt",
+    "translation": "чувствовать"
+  },
+  {
+    "baseForm": "fight",
+    "pastSimple": "fought",
+    "pastParticiple": "fought",
+    "translation": "бороться"
+  },
+  {
+    "baseForm": "find",
+    "pastSimple": "found",
+    "pastParticiple": "found",
+    "translation": "находить"
+  },
+  {
+    "baseForm": "flee",
+    "pastSimple": "fled",
+    "pastParticiple": "fled",
+    "translation": "спасаться бегством"
+  },
+  {
+    "baseForm": "fling",
+    "pastSimple": "flung",
+    "pastParticiple": "flung",
+    "translation": "швырять"
+  },
+  {
+    "baseForm": "fly",
+    "pastSimple": "flew",
+    "pastParticiple": "flown",
+    "translation": "летать"
+  },
+  {
+    "baseForm": "forbid",
+    "pastSimple": "forbad(e)",
+    "pastParticiple": "forbidden",
+    "translation": "запрещать"
+  },
+  {
+    "baseForm": "forecast",
+    "pastSimple": "forecast",
+    "pastParticiple": "forecast",
+    "translation": "предсказывать"
+  },
+  {
+    "baseForm": "forget",
+    "pastSimple": "forgot",
+    "pastParticiple": "forgotten",
+    "translation": "забывать"
+  },
+  {
+    "baseForm": "forgive",
+    "pastSimple": "forgave",
+    "pastParticiple": "forgiven",
+    "translation": "прощать"
+  },
+  {
+    "baseForm": "forsake",
+    "pastSimple": "forsook",
+    "pastParticiple": "forsaken",
+    "translation": "оставлять, покидать"
+  },
+  {
+    "baseForm": "foresee",
+    "pastSimple": "foresaw",
+    "pastParticiple": "foreseen",
+    "translation": "предвидеть"
+  },
+  {
+    "baseForm": "foretell",
+    "pastSimple": "foretold",
+    "pastParticiple": "foretold",
+    "translation": "предвещать"
+  },
+  {
+    "baseForm": "freeze",
+    "pastSimple": "froze",
+    "pastParticiple": "frozen",
+    "translation": "замерзать"
+  },
+  {
+    "baseForm": "get",
+    "pastSimple": "got",
+    "pastParticiple": "got",
+    "translation": "получить"
+  },
+  {
+    "baseForm": "give",
+    "pastSimple": "gave",
+    "pastParticiple": "given",
+    "translation": "давать"
+  },
+  {
+    "baseForm": "go",
+    "pastSimple": "went",
+    "pastParticiple": "gone",
+    "translation": "идти"
+  },
+  {
+    "baseForm": "grind",
+    "pastSimple": "ground",
+    "pastParticiple": "ground",
+    "translation": "молоть"
+  },
+  {
+    "baseForm": "grow",
+    "pastSimple": "grew",
+    "pastParticiple": "grown",
+    "translation": "расти, выращивать"
+  },
+  {
+    "baseForm": "hang",
+    "pastSimple": "hung",
+    "pastParticiple": "hung",
+    "translation": "висеть, повесить"
+  },
+  {
+    "baseForm": "have",
+    "pastSimple": "had",
+    "pastParticiple": "had",
+    "translation": "иметь"
+  },
+  {
+    "baseForm": "hear",
+    "pastSimple": "heard",
+    "pastParticiple": "heard",
+    "translation": "слышать"
+  },
+  {
+    "baseForm": "hide",
+    "pastSimple": "hid",
+    "pastParticiple": "hidden",
+    "translation": "прятаться"
+  },
+  {
+    "baseForm": "hit",
+    "pastSimple": "hit",
+    "pastParticiple": "hit",
+    "translation": "ударять, попадать"
+  },
+  {
+    "baseForm": "hold",
+    "pastSimple": "held",
+    "pastParticiple": "held",
+    "translation": "держать"
+  },
+  {
+    "baseForm": "hurt",
+    "pastSimple": "hurt",
+    "pastParticiple": "hurt",
+    "translation": "причинять боль"
+  },
+  {
+    "baseForm": "keep",
+    "pastSimple": "kept",
+    "pastParticiple": "kept",
+    "translation": "хранить, продолжать"
+  },
+  {
+    "baseForm": "kneel",
+    "pastSimple": "knelt",
+    "pastParticiple": "knelt",
+    "translation": "становиться на колени"
+  },
+  {
+    "baseForm": "know",
+    "pastSimple": "knew",
+    "pastParticiple": "known",
+    "translation": "знать"
+  },
+  {
+    "baseForm": "lay",
+    "pastSimple": "laid",
+    "pastParticiple": "laid",
+    "translation": "положить"
+  },
+  {
+    "baseForm": "lead",
+    "pastSimple": "led",
+    "pastParticiple": "led",
+    "translation": "вести кого-то"
+  },
+  {
+    "baseForm": "lean",
+    "pastSimple": "leant",
+    "pastParticiple": "leant",
+    "translation": "нагибаться, облокотиться"
+  },
+  {
+    "baseForm": "leap",
+    "pastSimple": "leapt",
+    "pastParticiple": "leapt",
+    "translation": "прыгать"
+  },
+  {
+    "baseForm": "learn",
+    "pastSimple": "learnt",
+    "pastParticiple": "learnt",
+    "translation": "изучать"
+  },
+  {
+    "baseForm": "leave",
+    "pastSimple": "left",
+    "pastParticiple": "left",
+    "translation": "покидать, оставлять"
+  },
+  {
+    "baseForm": "lend",
+    "pastSimple": "lent",
+    "pastParticiple": "lent",
+    "translation": "давать взаймы"
+  },
+  {
+    "baseForm": "let",
+    "pastSimple": "let",
+    "pastParticiple": "let",
+    "translation": "позволять"
+  },
+  {
+    "baseForm": "lie",
+    "pastSimple": "lay",
+    "pastParticiple": "lain",
+    "translation": "лежать"
+  },
+  {
+    "baseForm": "lose",
+    "pastSimple": "lost",
+    "pastParticiple": "lost",
+    "translation": "потерять, проиграть"
+  },
+  {
+    "baseForm": "make",
+    "pastSimple": "made",
+    "pastParticiple": "made",
+    "translation": "делать (своими руками)"
+  },
+  {
+    "baseForm": "mean",
+    "pastSimple": "meant",
+    "pastParticiple": "meant",
+    "translation": "означать"
+  },
+  {
+    "baseForm": "meet",
+    "pastSimple": "met",
+    "pastParticiple": "met",
+    "translation": "встречать"
+  },
+  {
+    "baseForm": "mistake",
+    "pastSimple": "mistook",
+    "pastParticiple": "mistaken",
+    "translation": "ошибаться"
+  },
+  {
+    "baseForm": "overhear",
+    "pastSimple": "overheard",
+    "pastParticiple": "overheard",
+    "translation": "подслушать"
+  },
+  {
+    "baseForm": "oversleep",
+    "pastSimple": "overslept",
+    "pastParticiple": "overslept",
+    "translation": "проспать"
+  },
+  {
+    "baseForm": "pay",
+    "pastSimple": "paid",
+    "pastParticiple": "paid",
+    "translation": "платить"
+  },
+  {
+    "baseForm": "put",
+    "pastSimple": "put",
+    "pastParticiple": "put",
+    "translation": "положить"
+  },
+  {
+    "baseForm": "read",
+    "pastSimple": "read",
+    "pastParticiple": "read",
+    "translation": "читать"
+  },
+  {
+    "baseForm": "rend",
+    "pastSimple": "rent",
+    "pastParticiple": "rent",
+    "translation": "отдирать, отрывать"
+  },
+  {
+    "baseForm": "rid",
+    "pastSimple": "rid",
+    "pastParticiple": "rid",
+    "translation": "освобождать, избавлять"
+  },
+  {
+    "baseForm": "ride",
+    "pastSimple": "rode",
+    "pastParticiple": "ridden",
+    "translation": "ездить верхом"
+  },
+  {
+    "baseForm": "ring",
+    "pastSimple": "rang",
+    "pastParticiple": "rung",
+    "translation": "звонить"
+  },
+  {
+    "baseForm": "rise",
+    "pastSimple": "rose",
+    "pastParticiple": "risen",
+    "translation": "всходить, возрастать"
+  },
+  {
+    "baseForm": "run",
+    "pastSimple": "ran",
+    "pastParticiple": "run",
+    "translation": "бежать"
+  },
+  {
+    "baseForm": "say",
+    "pastSimple": "said",
+    "pastParticiple": "said",
+    "translation": "сказать"
+  },
+  {
+    "baseForm": "see",
+    "pastSimple": "saw",
+    "pastParticiple": "seen",
+    "translation": "видеть"
+  },
+  {
+    "baseForm": "seek",
+    "pastSimple": "sought",
+    "pastParticiple": "sought",
+    "translation": "искать"
+  },
+  {
+    "baseForm": "sell",
+    "pastSimple": "sold",
+    "pastParticiple": "sold",
+    "translation": "продавать"
+  },
+  {
+    "baseForm": "send",
+    "pastSimple": "sent",
+    "pastParticiple": "sent",
+    "translation": "отправлять"
+  },
+  {
+    "baseForm": "set",
+    "pastSimple": "set",
+    "pastParticiple": "set",
+    "translation": "установить"
+  },
+  {
+    "baseForm": "shake",
+    "pastSimple": "shook",
+    "pastParticiple": "shaken",
+    "translation": "трясти"
+  },
+  {
+    "baseForm": "shed",
+    "pastSimple": "shed",
+    "pastParticiple": "shed",
+    "translation": "проливать"
+  },
+  {
+    "baseForm": "shine",
+    "pastSimple": "shone",
+    "pastParticiple": "shone",
+    "translation": "светить, сиять"
+  },
+  {
+    "baseForm": "shoot",
+    "pastSimple": "shot",
+    "pastParticiple": "shot",
+    "translation": "стрелять"
+  },
+  {
+    "baseForm": "show",
+    "pastSimple": "showed",
+    "pastParticiple": "shown",
+    "translation": "показывать"
+  },
+  {
+    "baseForm": "shrink",
+    "pastSimple": "shrank",
+    "pastParticiple": "shrunk",
+    "translation": "садиться (об одежде)"
+  },
+  {
+    "baseForm": "shrive",
+    "pastSimple": "shrove",
+    "pastParticiple": "shriven",
+    "translation": "исповедаться"
+  },
+  {
+    "baseForm": "shut",
+    "pastSimple": "shut",
+    "pastParticiple": "shut",
+    "translation": "закрывать"
+  },
+  {
+    "baseForm": "sing",
+    "pastSimple": "sang",
+    "pastParticiple": "sung",
+    "translation": "петь"
+  },
+  {
+    "baseForm": "sink",
+    "pastSimple": "sank",
+    "pastParticiple": "sunk",
+    "translation": "тонуть"
+  },
+  {
+    "baseForm": "sit",
+    "pastSimple": "sat",
+    "pastParticiple": "sat",
+    "translation": "сидеть"
+  },
+  {
+    "baseForm": "slay",
+    "pastSimple": "slew",
+    "pastParticiple": "slain",
+    "translation": "сразить, убить"
+  },
+  {
+    "baseForm": "sleep",
+    "pastSimple": "slept",
+    "pastParticiple": "slept",
+    "translation": "спать"
+  },
+  {
+    "baseForm": "slide",
+    "pastSimple": "slid",
+    "pastParticiple": "slid",
+    "translation": "скользить"
+  },
+  {
+    "baseForm": "sling",
+    "pastSimple": "slung",
+    "pastParticiple": "slung",
+    "translation": "подвесить"
+  },
+  {
+    "baseForm": "slink",
+    "pastSimple": "slunk",
+    "pastParticiple": "slunk",
+    "translation": "красться"
+  },
+  {
+    "baseForm": "slit",
+    "pastSimple": "slit",
+    "pastParticiple": "slit",
+    "translation": "разрезать вдоль"
+  },
+  {
+    "baseForm": "smell",
+    "pastSimple": "smelt",
+    "pastParticiple": "smelt",
+    "translation": "нюхать, пахнуть"
+  },
+  {
+    "baseForm": "smite",
+    "pastSimple": "smote",
+    "pastParticiple": "smitten",
+    "translation": "биться, разрушать"
+  },
+  {
+    "baseForm": "speak",
+    "pastSimple": "spoke",
+    "pastParticiple": "spoken",
+    "translation": "говорить"
+  },
+  {
+    "baseForm": "speed",
+    "pastSimple": "sped",
+    "pastParticiple": "sped",
+    "translation": "проноситься"
+  },
+  {
+    "baseForm": "spend",
+    "pastSimple": "spent",
+    "pastParticiple": "spent",
+    "translation": "проводить (время), тратить"
+  },
+  {
+    "baseForm": "spin",
+    "pastSimple": "spun",
+    "pastParticiple": "spun",
+    "translation": "кружиться"
+  },
+  {
+    "baseForm": "spit",
+    "pastSimple": "spat",
+    "pastParticiple": "spat",
+    "translation": "плевать"
+  },
+  {
+    "baseForm": "split",
+    "pastSimple": "split",
+    "pastParticiple": "split",
+    "translation": "раскалывать"
+  },
+  {
+    "baseForm": "spoil",
+    "pastSimple": "spoilt",
+    "pastParticiple": "spoilt",
+    "translation": "портить"
+  },
+  {
+    "baseForm": "spread",
+    "pastSimple": "spread",
+    "pastParticiple": "spread",
+    "translation": "распространить"
+  },
+  {
+    "baseForm": "spring",
+    "pastSimple": "sprang",
+    "pastParticiple": "sprung",
+    "translation": "скакать, прыгать"
+  },
+  {
+    "baseForm": "stand",
+    "pastSimple": "stood",
+    "pastParticiple": "stood",
+    "translation": "стоять"
+  },
+  {
+    "baseForm": "steal",
+    "pastSimple": "stole",
+    "pastParticiple": "stolen",
+    "translation": "красть"
+  },
+  {
+    "baseForm": "stick",
+    "pastSimple": "stuck",
+    "pastParticiple": "stuck",
+    "translation": "прилипать"
+  },
+  {
+    "baseForm": "sting",
+    "pastSimple": "stung",
+    "pastParticiple": "stung",
+    "translation": "ужалить"
+  },
+  {
+    "baseForm": "stink",
+    "pastSimple": "stank",
+    "pastParticiple": "stunk",
+    "translation": "вонять"
+  },
+  {
+    "baseForm": "stride",
+    "pastSimple": "strode",
+    "pastParticiple": "stridden",
+    "translation": "шагать"
+  },
+  {
+    "baseForm": "strike",
+    "pastSimple": "struck",
+    "pastParticiple": "struck",
+    "translation": "ударять, сражать"
+  },
+  {
+    "baseForm": "string",
+    "pastSimple": "strung",
+    "pastParticiple": "strung",
+    "translation": "завязывать"
+  },
+  {
+    "baseForm": "strive",
+    "pastSimple": "strove",
+    "pastParticiple": "striven",
+    "translation": "стараться, бороться"
+  },
+  {
+    "baseForm": "swear",
+    "pastSimple": "swore",
+    "pastParticiple": "sworn",
+    "translation": "клясться, сквернословить"
+  },
+  {
+    "baseForm": "sweep",
+    "pastSimple": "swept",
+    "pastParticiple": "swept",
+    "translation": "подметать"
+  },
+  {
+    "baseForm": "swim",
+    "pastSimple": "swam",
+    "pastParticiple": "swum",
+    "translation": "плавать"
+  },
+  {
+    "baseForm": "swing",
+    "pastSimple": "swung",
+    "pastParticiple": "swung",
+    "translation": "качать, колебать"
+  },
+  {
+    "baseForm": "take",
+    "pastSimple": "took",
+    "pastParticiple": "taken",
+    "translation": "брать"
+  },
+  {
+    "baseForm": "teach",
+    "pastSimple": "taught",
+    "pastParticiple": "taught",
+    "translation": "преподавать"
+  },
+  {
+    "baseForm": "tear",
+    "pastSimple": "tore",
+    "pastParticiple": "torn",
+    "translation": "рвать"
+  },
+  {
+    "baseForm": "tell",
+    "pastSimple": "told",
+    "pastParticiple": "told",
+    "translation": "рассказать"
+  },
+  {
+    "baseForm": "think",
+    "pastSimple": "thought",
+    "pastParticiple": "thought",
+    "translation": "думать"
+  },
+  {
+    "baseForm": "throw",
+    "pastSimple": "threw",
+    "pastParticiple": "thrown",
+    "translation": "кидать"
+  },
+  {
+    "baseForm": "thrust",
+    "pastSimple": "thrust",
+    "pastParticiple": "thrust",
+    "translation": "пролезать, пронзать"
+  },
+  {
+    "baseForm": "tread",
+    "pastSimple": "trod",
+    "pastParticiple": "trodden",
+    "translation": "ступать"
+  },
+  {
+    "baseForm": "understand",
+    "pastSimple": "understood",
+    "pastParticiple": "understood",
+    "translation": "понимать"
+  },
+  {
+    "baseForm": "undertake",
+    "pastSimple": "undertook",
+    "pastParticiple": "undertaken",
+    "translation": "совершать, взяться за"
+  },
+  {
+    "baseForm": "undo",
+    "pastSimple": "undid",
+    "pastParticiple": "undone",
+    "translation": "расстегнуть"
+  },
+  {
+    "baseForm": "upset",
+    "pastSimple": "upset",
+    "pastParticiple": "upset",
+    "translation": "расстроить"
+  },
+  {
+    "baseForm": "wake",
+    "pastSimple": "woke",
+    "pastParticiple": "woken",
+    "translation": "просыпаться"
+  },
+  {
+    "baseForm": "wear",
+    "pastSimple": "wore",
+    "pastParticiple": "worn",
+    "translation": "носить"
+  },
+  {
+    "baseForm": "weave",
+    "pastSimple": "wove",
+    "pastParticiple": "woven",
+    "translation": "сплести"
+  },
+  {
+    "baseForm": "weep",
+    "pastSimple": "wept",
+    "pastParticiple": "wept",
+    "translation": "плакать"
+  },
+  {
+    "baseForm": "win",
+    "pastSimple": "won",
+    "pastParticiple": "won",
+    "translation": "выиграть"
+  },
+  {
+    "baseForm": "wind",
+    "pastSimple": "wound",
+    "pastParticiple": "wound",
+    "translation": "почуять, проветривать"
+  },
+  {
+    "baseForm": "withdraw",
+    "pastSimple": "withdrew",
+    "pastParticiple": "withdrawn",
+    "translation": "вывести, отодвинуть"
+  },
+  {
+    "baseForm": "withstand",
+    "pastSimple": "withstood",
+    "pastParticiple": "withstood",
+    "translation": "вытерпеть"
+  },
+  {
+    "baseForm": "wring",
+    "pastSimple": "wrung",
+    "pastParticiple": "wrung",
+    "translation": "скручивать"
+  },
+  {
+    "baseForm": "write",
+    "pastSimple": "wrote",
+    "pastParticiple": "written",
+    "translation": "писать"
   }
+]
+  
