@@ -15,7 +15,7 @@ class _MainPageState extends State<MainPage> {
   int wordNumber = 0;
 
   final verb = Verb(
-    base: 'be',
+    baseForm: 'be',
     pastSimple: 'was/were',
     pastParticiple: 'been',
     translation: 'быть',
@@ -71,7 +71,7 @@ class _MainPageState extends State<MainPage> {
                 children: [
                   _Text(
                     number: 1,
-                    title: verb.base,
+                    title: verb.baseForm,
                     wordNumber: wordNumber,
                   ),
                   const _Divider(),

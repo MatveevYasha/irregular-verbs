@@ -2,7 +2,7 @@ enum DifficultyLevel { easy, medium, hard }
 
 class Verb {
   // The first form of the verb
-  final String base;
+  final String baseForm;
 
   // The second form of the verb
   final String pastSimple;
@@ -21,7 +21,7 @@ class Verb {
   // final DifficultyLevel difficultyLevel;
 
   Verb({
-    required this.base,
+    required this.baseForm,
     required this.pastSimple,
     required this.pastParticiple,
     required this.translation,
