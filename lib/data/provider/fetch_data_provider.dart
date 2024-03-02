@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:irregular_verbs_app/data/dtos/verb_dto.dart';
+import 'package:irregular_verbs_app/data/dtos/verb_json_dto.dart';
 import 'package:irregular_verbs_app/data/entities/verb.dart';
 
 typedef Json = Map<String, Object?>;

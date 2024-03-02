@@ -1,8 +1,8 @@
-import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
-
 import 'package:irregular_verbs_app/data/entities/verb.dart';
+
 import 'package:irregular_verbs_app/data/provider/fetch_data_provider.dart';
 
 class MainPage extends StatefulWidget {
@@ -14,13 +14,15 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int wordNumber = 0;
+  Verb? verb;
+  List<Verb>? listOfVerbs;
 
-  final verb = Verb(
-    baseForm: 'be',
-    pastSimple: 'was/were',
-    pastParticiple: 'been',
-    translation: 'быть',
-  );
+  @override
+  void initState() {
+    super.initState();
+    _loadList();
+    _getVerb();
+  }
 
   void _scrollWords() {
     if (wordNumber < 4) {
@@ -28,15 +30,24 @@ class _MainPageState extends State<MainPage> {
       setState(() {});
       return;
     } else {
+      _getVerb();
       wordNumber = 0;
       setState(() {});
     }
   }
 
-  Future<void> _loadList() async {
-    final list = await FetchDataProvider().fetchFileFromAssets(context);
+  void _getVerb() {
+    final rng = Random();
 
-    print(list.first.baseForm);
+    if (listOfVerbs != null) {
+      final verbNumber = rng.nextInt(listOfVerbs!.length);
+
+      verb = listOfVerbs![verbNumber];
+    }
+  }
+
+  Future<void> _loadList() async {
+    listOfVerbs = await FetchDataProvider().fetchFileFromAssets(context);
   }
 
   @override
@@ -63,32 +74,32 @@ class _MainPageState extends State<MainPage> {
                 children: [
                   _Text(
                     number: 1,
-                    title: verb.baseForm,
+                    title: verb?.baseForm ?? '...',
                     wordNumber: wordNumber,
                   ),
                   const _Divider(),
                   _Text(
                     number: 2,
-                    title: verb.pastSimple,
+                    title: verb?.pastSimple ?? '...',
                     wordNumber: wordNumber,
                   ),
                   const _Divider(),
                   _Text(
                     number: 3,
-                    title: verb.pastParticiple,
+                    title: verb?.pastParticiple ?? '...',
                     wordNumber: wordNumber,
                   ),
                   const _Divider(),
                   _Text(
                     number: 4,
-                    title: verb.translation,
+                    title: verb?.translation ?? '...',
                     wordNumber: wordNumber,
                   ),
                 ],
               ),
             ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _loadList,
+        onPressed: _scrollWords,
         child: const Icon(Icons.workspaces_filled),
       ),
     );

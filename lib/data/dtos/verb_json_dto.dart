@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:irregular_verbs_app/data/entities/verb.dart';
 import 'package:irregular_verbs_app/data/provider/fetch_data_provider.dart';
 
-part 'verb_dto.g.dart';
+part 'verb_json_dto.g.dart';
 
 @JsonSerializable(createToJson: false)
 class VerbDTO {
