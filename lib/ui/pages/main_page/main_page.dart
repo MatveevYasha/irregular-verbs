@@ -21,21 +21,6 @@ class _MainPageState extends State<MainPage> {
     translation: 'быть',
   );
 
-  Future<void> _fetchFileFromAssets() async {
-    // final str = rootBundle
-    //     .loadString('/lib/data/json/verbs.json')
-    //     .then((file) => file.toString())
-    //     .catchError((err) => Future<String>.error(err));
-    // final str = await rootBundle.loadString('/json/verbs.json');
-
-    String data = await DefaultAssetBundle.of(context).loadString('assets/json/verbs.json');
-    final jsonResult = jsonDecode(data);
-
-    final list = jsonResult['verbs'];
-
-    print(list);
-  }
-
   void _scrollWords() {
     if (wordNumber < 4) {
       wordNumber++;
@@ -96,7 +81,7 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _fetchFileFromAssets,
+        // onPressed: _fetchFileFromAssets,
         child: const Icon(Icons.workspaces_filled),
       ),
     );
