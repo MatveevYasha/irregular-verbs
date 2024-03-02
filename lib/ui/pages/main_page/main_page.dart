@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import 'package:irregular_verbs_app/data/entities/verb.dart';
+import 'package:irregular_verbs_app/data/provider/fetch_data_provider.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -30,6 +31,12 @@ class _MainPageState extends State<MainPage> {
       wordNumber = 0;
       setState(() {});
     }
+  }
+
+  Future<void> _loadList() async {
+    final list = await FetchDataProvider().fetchFileFromAssets(context);
+
+    print(list.first.baseForm);
   }
 
   @override
@@ -81,7 +88,7 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
       floatingActionButton: FloatingActionButton(
-        // onPressed: _fetchFileFromAssets,
+        onPressed: _loadList,
         child: const Icon(Icons.workspaces_filled),
       ),
     );
