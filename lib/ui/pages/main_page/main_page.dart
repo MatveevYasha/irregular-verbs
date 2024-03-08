@@ -1,157 +1,105 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:irregular_verbs_app/data/entities/verb.dart';
 
 import 'package:irregular_verbs_app/data/provider/fetch_data_provider.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/bloc/main_bloc.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/bloc/main_event.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/bloc/main_state.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/widgets/divider_widget.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/widgets/text_widget.dart';
 
-class MainPage extends StatefulWidget {
+class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
   @override
-  State<MainPage> createState() => _MainPageState();
-}
-
-class _MainPageState extends State<MainPage> {
-  int wordNumber = 0;
-  Verb? verb;
-  List<Verb>? listOfVerbs;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadList();
-    _getVerb();
-  }
-
-  void _scrollWords() {
-    if (wordNumber < 4) {
-      wordNumber++;
-      setState(() {});
-      return;
-    } else {
-      _getVerb();
-      wordNumber = 0;
-      setState(() {});
-    }
-  }
-
-  void _getVerb() {
-    final rng = Random();
-
-    if (listOfVerbs != null) {
-      final verbNumber = rng.nextInt(listOfVerbs!.length);
-
-      verb = listOfVerbs![verbNumber];
-    }
-  }
-
-  Future<void> _loadList() async {
-    listOfVerbs = await FetchDataProvider().fetchFileFromAssets(context);
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final bloc = BlocProvider.of<MainBloc>(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Irregular Verbs $wordNumber'),
+        title: const Text('Irregular Verbs'),
+        centerTitle: true,
       ),
-      body: (wordNumber == 0)
-          ? const Center(
-              child: Text(
-                'Click on the button to start!',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w400,
+      body: BlocBuilder<MainBloc, MainState>(
+        builder: (context, state) {
+          return switch (state) {
+            LoadingMainState() => const CircularProgressIndicator(),
+            InitialMainState() => Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'Click on the button to start!',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    ElevatedButton(
+                        onPressed: () {
+                          bloc.add(StartLearningMainEvent(listOfVerbs: state.listOfVerbs));
+                        },
+                        child: const Text('Start'))
+                  ],
                 ),
               ),
-            )
-          : SizedBox(
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  _Text(
-                    number: 1,
-                    title: verb?.baseForm ?? '...',
-                    wordNumber: wordNumber,
-                  ),
-                  const _Divider(),
-                  _Text(
-                    number: 2,
-                    title: verb?.pastSimple ?? '...',
-                    wordNumber: wordNumber,
-                  ),
-                  const _Divider(),
-                  _Text(
-                    number: 3,
-                    title: verb?.pastParticiple ?? '...',
-                    wordNumber: wordNumber,
-                  ),
-                  const _Divider(),
-                  _Text(
-                    number: 4,
-                    title: verb?.translation ?? '...',
-                    wordNumber: wordNumber,
-                  ),
-                ],
+            CounterMainState() => SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    TextWidget(
+                      number: 1,
+                      title: state.verb.baseForm,
+                      wordNumber: 1,
+                    ),
+                    const DividerWidget(),
+                    TextWidget(
+                      number: 2,
+                      title: state.verb.pastSimple,
+                      wordNumber: 2,
+                    ),
+                    const DividerWidget(),
+                    TextWidget(
+                      number: 3,
+                      title: state.verb.pastParticiple,
+                      wordNumber: 3,
+                    ),
+                    const DividerWidget(),
+                    TextWidget(
+                      number: 4,
+                      title: state.verb.translation,
+                      wordNumber: 4,
+                    ),
+                    const SizedBox(height: 100),
+                    FloatingActionButton(
+                      onPressed: () {
+                        bloc.add(GetOneVerbMainEvent(
+                          listOfVerbs: state.listOfVerbs,
+                          verb: state.verb,
+                          count: state.count,
+                        ));
+                      },
+                    ),
+                  ],
+                ),
               ),
-            ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _scrollWords,
-        child: const Icon(Icons.workspaces_filled),
+            ErrorMainState() => const Center(
+                child: Text(
+                  'An error has occurred, try restarting the application',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+          };
+        },
       ),
     );
   }
-}
-
-class _Divider extends StatelessWidget {
-  const _Divider();
-
-  @override
-  Widget build(BuildContext context) => const Divider(color: Colors.black);
-}
-
-class _Text extends StatelessWidget {
-  final String title;
-  final int wordNumber;
-  final int number;
-
-  const _Text({
-    required this.title,
-    required this.wordNumber,
-    required this.number,
-  });
-
-  @override
-  Widget build(BuildContext context) => Expanded(
-        child: Row(
-          children: [
-            if (number != 4)
-              Expanded(
-                child: Text(
-                  number.toString(),
-                  style: TextStyle(
-                    fontSize: 72,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.grey[300],
-                  ),
-                  textAlign: TextAlign.end,
-                ),
-              ),
-            Expanded(
-              flex: 5,
-              child: Text(
-                (number <= wordNumber) ? title : '...',
-                style: const TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w500,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ],
-        ),
-      );
 }

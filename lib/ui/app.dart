@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/bloc/main_bloc.dart';
+import 'package:irregular_verbs_app/ui/pages/main_page/bloc/main_event.dart';
 import 'package:irregular_verbs_app/ui/pages/main_page/main_page.dart';
 
 class App extends StatelessWidget {
@@ -11,7 +14,10 @@ class App extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black26),
         useMaterial3: true,
       ),
-      home: const MainPage(),
+      home: BlocProvider(
+        create: (context) => MainBloc()..add(InitialMainEvent()),
+        child: const MainPage(),
+      ),
     );
   }
 }
