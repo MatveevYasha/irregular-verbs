@@ -4,30 +4,20 @@ sealed class MainEvent {}
 
 class InitialMainEvent extends MainEvent {}
 
-class StartLearningMainEvent extends MainEvent {
-  final List<Verb> listOfVerbs;
+// class StartLearningMainEvent extends MainEvent {
+//   final List<Verb> listOfVerbs;
 
-  StartLearningMainEvent({required this.listOfVerbs});
-}
+//   StartLearningMainEvent({required this.listOfVerbs});
+// }
 
-class GetOneVerbMainEvent extends MainEvent {
+class GetNextWordMainEvent extends MainEvent {
   final List<Verb> listOfVerbs;
-  final Verb verb;
+  final Verb? verb;
   final int count;
 
-  GetOneVerbMainEvent({
+  GetNextWordMainEvent({
     required this.listOfVerbs,
-    required this.verb,
     required this.count,
+    this.verb,
   });
 }
-
-// class GetNextWordMainEvent extends MainEvent {
-//   final Verb verb;
-//   final int count;
-
-//   GetNextWordMainEvent({
-//     required this.verb,
-//     required this.count,
-//   });
-// }

@@ -30,13 +30,16 @@ class TextWidget extends StatelessWidget {
               ),
             Expanded(
               flex: 5,
-              child: Text(
-                (number <= wordNumber) ? title : '...',
-                style: const TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w500,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  (number <= wordNumber) ? title : '...',
+                  style: const TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
-                textAlign: TextAlign.center,
               ),
             ),
           ],

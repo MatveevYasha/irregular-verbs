@@ -10,8 +10,8 @@ class MainBloc extends Bloc<MainEvent, MainState> {
     on<MainEvent>(
       (event, emit) => switch (event) {
         final InitialMainEvent event => _initial(event, emit),
-        final GetOneVerbMainEvent event => _getOneVerb(event, emit),
-        final StartLearningMainEvent event => _startLearning(event, emit),
+        final GetNextWordMainEvent event => _getNextWord(event, emit),
+        // final StartLearningMainEvent event => _startLearning(event, emit),
       },
     );
   }
@@ -20,37 +20,33 @@ class MainBloc extends Bloc<MainEvent, MainState> {
     try {
       final listOfVerbs = await FetchDataProvider().fetchFileFromAssets();
 
-      emit(InitialMainState(listOfVerbs));
+      emit(CounterMainState(listOfVerbs: listOfVerbs, count: 0));
     } catch (e) {
       emit(ErrorMainState());
     }
   }
 
-  void _getOneVerb(GetOneVerbMainEvent event, Emitter<MainState> emit) {
-    // final rnd = Random();
+  void _getNextWord(GetNextWordMainEvent event, Emitter<MainState> emit) {
+    if (event.count < 4 && event.count != 0) {
+      emit(CounterMainState(verb: event.verb!, listOfVerbs: event.listOfVerbs, count: event.count + 1));
+    } else {
+      final rnd = Random();
 
-    // final verbNumber = rnd.nextInt(event.listOfVerbs.length);
+      final verbNumber = rnd.nextInt(event.listOfVerbs.length);
 
-    // final verb = event.listOfVerbs[verbNumber];
+      final verb = event.listOfVerbs[verbNumber];
 
-    // emit(CounterMainState(verb: verb, listOfVerbs: event.listOfVerbs, count: 1));
+      emit(CounterMainState(verb: verb, listOfVerbs: event.listOfVerbs, count: 1));
+    }
   }
 
-  void _startLearning(StartLearningMainEvent event, Emitter<MainState> emit) {
-    final rnd = Random();
+  // void _startLearning(StartLearningMainEvent event, Emitter<MainState> emit) {
+  //   final rnd = Random();
 
-    final verbNumber = rnd.nextInt(event.listOfVerbs.length);
+  //   final verbNumber = rnd.nextInt(event.listOfVerbs.length);
 
-    final verb = event.listOfVerbs[verbNumber];
+  //   final verb = event.listOfVerbs[verbNumber];
 
-    emit(CounterMainState(listOfVerbs: event.listOfVerbs, verb: verb, count: 1));
-  }
-
-  // void _getNextWord(GetNextWordMainEvent event, Emitter<MainState> emit) {
-  // if (event.count < 4) {
-  //   emit(GetNextWordMainState(verb: event.verb, count: event.count + 1));
-  // } else {
-  //   emit(GetNextWordMainState(verb: event.verb, count: event.count + 1));
-  // }
+  //   emit(CounterMainState(listOfVerbs: event.listOfVerbs, verb: verb, count: 1));
   // }
 }
