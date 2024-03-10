@@ -13,13 +13,6 @@ class Verb {
   // Translation on choose language
   final String translation;
 
-  // TODO: Сделать в следующих версиях
-  // Is it necessary to repeat this verb, or have you already learned it
-  // final bool isRepeat;
-
-  // How much do the verb forms differ from each other
-  // final DifficultyLevel difficultyLevel;
-
   Verb({
     required this.baseForm,
     required this.pastSimple,
