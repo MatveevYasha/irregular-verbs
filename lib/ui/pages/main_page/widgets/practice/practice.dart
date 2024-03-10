@@ -59,7 +59,7 @@ class Practise extends StatelessWidget {
                   title: verb!.translation,
                   wordNumber: count,
                 ),
-                const SizedBox(height: 100),
+                const Spacer(flex: 1)
               ],
             ),
       Positioned(
@@ -83,6 +83,7 @@ class Practise extends StatelessWidget {
                     count: count,
                   ));
                 },
+                child: const Icon(Icons.workspaces_outline),
               ),
       ),
     ]);

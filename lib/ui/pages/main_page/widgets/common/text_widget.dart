@@ -14,18 +14,24 @@ class TextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Expanded(
+        flex: 2,
         child: Row(
           children: [
             if (number != 4)
               Expanded(
-                child: Text(
-                  number.toString(),
-                  style: TextStyle(
-                    fontSize: 72,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.grey[300],
+                child: FittedBox(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: Text(
+                      number.toString(),
+                      style: TextStyle(
+                        fontSize: 72,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey[300],
+                      ),
+                      textAlign: TextAlign.end,
+                    ),
                   ),
-                  textAlign: TextAlign.end,
                 ),
               ),
             Expanded(
